@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <title>Fx0 Fan Page</title>
+    <meta name="description" content="LG fx0 Madai LGL25">
+    <meta name="keywords" content="">
+    <link rel="canonical" href="{{ CURRENT_PAGE.absolute_final_url }}" />
+    <link rel="shortcut icon" type="image/png" href="{% static '/static/images/favicon.png' %}">
+    <link rel="stylesheet" href="{% static '/static/css/style.css' %}">
+    <link rel="stylesheet" href="{% static '/static/css/reset.css' %}">
+    <link href="https://fonts.googleapis.com/css?family=Karla" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/jquery/3.0.0/jquery.min.js"></script>
+  </head>
+
+  <body>
+    <div class="header">
+      <div class="header-wrapper">
+        <span class="brand"><a href="{% url "/" %}">Fx0 <span>/</span> LGL25 <span>/</span> Madai</a></span>
+        <div class="nav">
+          <span><a href="{% url "/" %}">Home</a></span>
+          <span><a href="{% url "/android" %}">Android</a></span>
+          <span><a href="{% url "/tutorials" %}">Tutorials</a></span>
+          <span><a href="{% url "/downloads" %}">Downloads</a></span>
+          <span><a href="{% url "/vendors" %}">Vendors</a></span>
+        </div>
+      </div>
+    </div>
+    <div class="wrapper">
+      <div class="content">
+
+      {% block body %}
+      {% endblock %}
+
+      </div>
+      <div class="footer">
+        <p><a href="http://hellco.net">Hellco</a></p>
+      </div>
+    </div>
+  </body>
+
+  {% block scripts %}
+  {% endblock %}
+</html>

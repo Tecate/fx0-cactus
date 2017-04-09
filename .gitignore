@@ -1,0 +1,3 @@
+locale/
+plugins/*.disabled*
+.build/
